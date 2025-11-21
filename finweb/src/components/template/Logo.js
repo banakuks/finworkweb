@@ -14,29 +14,30 @@ const Logo = (props) => {
             style={{
                 ...style,
                 ...{ width: logoWidth },
+                width: '80%',
             }}
         >
             <img
                 className={imgClass}
-                src={`${LOGO_SRC_PATH}logo-${mode}-${type}.png`}
+                src={`${LOGO_SRC_PATH}finwork-logo.png`}
                 alt={`${APP_NAME} logo`}
             />
         </div>
     )
 }
 
-Logo.defaultProps = {
-    mode: 'light',
-    type: 'full',
-    logoWidth: 'auto',
-}
+// Logo.defaultProps = {
+//     mode: 'light',
+//     type: 'full',
+//     logoWidth: 'auto',
+// }
 
-Logo.propTypes = {
-    mode: PropTypes.oneOf(['light', 'dark']),
-    type: PropTypes.oneOf(['full', 'streamline']),
-    gutter: PropTypes.string,
-    imgClass: PropTypes.string,
-    logoWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-}
+// Logo.propTypes = {
+//     mode: PropTypes.oneOf(['light', 'dark']),
+//     type: PropTypes.oneOf(['full', 'streamline']),
+//     gutter: PropTypes.string,
+//     imgClass: PropTypes.string,
+//     logoWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+// }
 
 export default Logo
